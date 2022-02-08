@@ -350,6 +350,7 @@ h3.my-profession
 {
     flex: 0 0 100%;
     max-width: 100%;
+    text-align: justify;
 }
 .about .about-content .about-text h3
 {
@@ -364,9 +365,10 @@ h3.my-profession
 }
 .about .about-content .about-text p
 {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 35px;
     color: var(--text-black-700);
+    /* justify-content: space-between; */
 }
 .about .about-content .personal-info
 {
@@ -714,8 +716,9 @@ h3.my-profession
 
 /* project section */
 .project-body {
-    background: linear-gradient(to right, #101c81, #2a6ba3);
-    min-height: 100vh
+    background: linear-gradient(to right, #f7f7f7, #aacbd8);
+    min-height: 60vh;
+    margin-top: 5px;
 }
 
 .owl-carousel .owl-item {
@@ -724,7 +727,13 @@ h3.my-profession
 
 .owl-carousel .owl-item .project-card {
     padding: 30px;
-    position: relative
+    position: relative;
+    background-color: white;
+}
+.owl-carousel .owl-item .project-card .testimonial-1 {
+    margin-top: 20px;
+    margin-bottom: 1px;
+    text-align: justify;
 }
 
 .owl-carousel .owl-stage-outer {
@@ -743,7 +752,7 @@ h3.my-profession
     bottom: -20px;
     left: 40%;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     background-color: var(--skin-color);
     padding: 0.3rem 0.4rem;
