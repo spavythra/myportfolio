@@ -588,10 +588,7 @@ h3.my-profession
     color: var(--skin-color);
     transition: all 0.3s ease;
 }
-/* .service .service-item .service-item-inner:hover .icon
-{
-    background: var(--skin-color);
-} */
+
 .service .service-item .service-item-inner:hover .icon .fa
 {
     font-size: 25px;
@@ -628,8 +625,6 @@ h3.my-profession
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
-    /* background: var(--skin-color); */
-
     background: -webkit-linear-gradient(left, #a445b2, var(--skin-color));
 }  
 .wrapper{
@@ -712,7 +707,6 @@ h3.my-profession
       width: 100%;
     }
   }
-
 
 /* project section */
 .project-body {
@@ -806,85 +800,6 @@ h3.my-profession
     }
 }
 
-/* .project, .contact{
-    position: relative;
-    padding: 50px 10vw;
-}
-
-.filters{
-    width: fit-content;
-    display: block;
-    margin: 100px auto;
-}
-
-.filter-btn{
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    text-transform: capitalize;
-    margin: 0 5px 10px;
-    cursor: pointer;
-}
-
-.filter-btn.active{
-    background: var(--skin-color);
-    color: #fff;
-}
-
-.project-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-}
-
-.project-card{
-    position: relative;
-    cursor: pointer;
-    display: block;
-}
-
-.project-card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project-card .content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
-    text-transform: capitalize;
-    opacity: 0;
-}
-
-.project-name{
-    font-weight: 300;
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.tags{
-    position: absolute;
-    bottom: 20px;
-    opacity: 0.6;
-    width: 90%;
-}
-
-.project-card:hover .content{
-    opacity: 1;
-}
-
-.project-card.hide{
-    display: none;
-} */
 
 /* portfolio */
 .portfolio .container
@@ -942,30 +857,39 @@ h3.my-profession
     text-align: center;
     margin-bottom: 60px;
 }
+.contact .contact-info-item-2
+{
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    text-align: center;
+    margin-bottom: 60px;
+}
 .contact .contact-section {
-    /* background: var(--bg-black-900);
-    background-color: var(--bg-black-100); */
     min-height: 100vh;
     display: block;
     padding: 0 30px;
     opacity: 1;
 }
-.contact .contact-info-item .icon
+.contact .contact-info-item .icon,
+.contact .contact-info-item-2 .icon
 {
     display: inline-block;
     
 }
-.contact .contact-info-item .icon .fa
+.contact .contact-info-item .icon .fa,
+.contact .contact-info-item-2 .icon .fa
 {
     font-size: 65px;
     color: var(--skin-color);
 }
-.contact .contact-info-item .icon .fab
+.contact .contact-info-item .icon .fab,
+.contact .contact-info-item-2 .icon .fab
 {
     font-size: 65px;
     color: var(--skin-color);
 }
-.contact .contact-info-item h4
+.contact .contact-info-item h4,
+.contact .contact-info-item-2 h4
 {
     font-size: 18px;
     font-weight: 700;
@@ -973,7 +897,8 @@ h3.my-profession
     text-transform: capitalize;
     margin: 15px 0 5px;
 }
-.contact .contact-info-item p
+.contact .contact-info-item p,
+.contact .contact-info-item-2 p
 {
     font-size: 16px;
     line-height: 25px;
@@ -1036,7 +961,6 @@ h3.my-profession
 .footer{
     width: 100%;
     height: 30px;
-    /* text-align: center; */
     background-color: var(--skin-color);
     text-transform: capitalize;
     line-height: 30px;
@@ -1066,6 +990,7 @@ h3.my-profession
 @media (max-width:991px)
 {
     .contact .contact-info-item,
+    .contact .contact-info-item-2,
     .portfolio .portfolio-item,
     .service .service-item
     {
@@ -1086,6 +1011,7 @@ h3.my-profession
 {
     .contact .contact-form .col-6,
     .contact .contact-info-item,
+    .contact .contact-info-item-2,
     .portfolio .portfolio-item,
     .service .service-item,
     .about .about-content .experience,
