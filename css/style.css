@@ -809,7 +809,7 @@ h3.my-profession
     }
     .footer p {
         color: white;
-        margin-left: 10%;
+        margin-left: 0;
     }
 }
 
@@ -826,7 +826,7 @@ h3.my-profession
     }
     .footer p {
         color: white;
-        margin-left: 10%;
+        margin-left: 0;
         
     }
 }
@@ -998,7 +998,7 @@ h3.my-profession
 }
 .footer p {
     color: white;
-    margin-left: 45%;
+    /* margin-left: 45%; */
 }
 /* End Footer */
 
