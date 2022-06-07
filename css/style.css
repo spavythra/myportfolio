@@ -2,19 +2,20 @@
 
 :root
 {
+    --bg-black-900:#222121;
+    --bg-black-100:#151515;
+    --bg-black-50:#393939;
+    --text-black-900:#ddd7d7;
+    --text-black-700:#e9e9e9;
+/* default color background*/
+}
+body.dark 
+{
     --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
     --bg-black-50:#e8dfec;
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
-}
-body.dark 
-{
-    --bg-black-900:#151515;
-    --bg-black-100:#222222;
-    --bg-black-50:#393939;
-    --text-black-900:#ffffff;
-    --text-black-700:#e9e9e9;
 }
 body
 {
@@ -613,7 +614,7 @@ h3.my-profession
 .dot {
     height: 45px;
     width: 45px;
-    background-color: red;
+    background-color: rgb(223, 87, 87);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -626,7 +627,7 @@ h3.my-profession
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
-    background: -webkit-linear-gradient(left, #a445b2, var(--skin-color));
+    background: -webkit-linear-gradient(left, #e7adf0, var(--skin-color));
 }  
 .wrapper{
     width: 800px;
