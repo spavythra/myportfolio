@@ -746,20 +746,26 @@ h3.my-profession
 .owl-carousel .owl-item .project-card .name {
     position: absolute;
     bottom: -20px;
-    left: 30%;
+    left: 0px;
     color: white;
     font-size: 1.2rem;
     font-weight: 600;
     background-color: var(--skin-color);
     padding: 0.5rem 0.7rem;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 2px 3px 15px #3c405a;
     margin-top: 30px;
+    width: 100%;
+    /* margin-right: 50%; */
+    text-align: center;
+    align-items: center;
 }
 .owl-carousel .owl-item .project-card .name .name-content{
-    margin-right: 15px;
+    /* margin-right: 15px; */
     margin-top: 10px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    /* text-align: center;
+    align-items: center; */
 }
 
 .owl-carousel .owl-item .project-card {
