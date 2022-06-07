@@ -827,6 +827,7 @@ h3.my-profession
     .footer p {
         color: white;
         margin-left: 10%;
+        
     }
 }
 
@@ -1083,6 +1084,7 @@ h3.my-profession
     }
     .footer p {
         color: white;
-        margin-left: 10%;
+        text-align: center;
+        align-items: center;
     }
 }
