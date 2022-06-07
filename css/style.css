@@ -809,7 +809,7 @@ h3.my-profession
     }
     .footer p {
         color: white;
-        margin-left: 0;
+        margin-left: 10%;
     }
 }
 
@@ -826,7 +826,7 @@ h3.my-profession
     }
     .footer p {
         color: white;
-        margin-left: 0;
+        margin-left: 10%;
         
     }
 }
@@ -998,7 +998,7 @@ h3.my-profession
 }
 .footer p {
     color: white;
-    /* margin-left: 45%; */
+    margin-left: 45%;
 }
 /* End Footer */
 
@@ -1026,9 +1026,7 @@ h3.my-profession
     }
     .footer p {
         color: white;
-        /* margin-left: 10%; */
-        text-align: center;
-        align-items: center;
+        margin-left: 10%;
     }
 }
 @media (max-width:991px)
@@ -1059,9 +1057,7 @@ h3.my-profession
     }
     .footer p {
         color: white;
-        /* margin-left: 10%; */
-        text-align: center;
-        align-items: center;
+        margin-left: 10%;
     }
 }
 @media (max-width:767px)
