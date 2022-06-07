@@ -692,12 +692,17 @@ h3.my-profession
     font-weight: 600;
   }
   @media(max-width: 753px){
+
     .wrapper{
       max-width: 700px;
     }
     .wrapper .card{
       width: calc(50% - 20px);
       margin-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column;
     }
   }
   @media(max-width: 505px){
