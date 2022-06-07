@@ -1080,7 +1080,7 @@ h3.my-profession
         height: 30px;
         background-color: var(--skin-color);
         text-transform: capitalize;
-        line-height: 30px;
+        /* line-height: 30px; */
     }
     .footer p {
         color: white;
