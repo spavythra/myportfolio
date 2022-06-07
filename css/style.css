@@ -1026,7 +1026,9 @@ h3.my-profession
     }
     .footer p {
         color: white;
-        margin-left: 10%;
+        /* margin-left: 10%; */
+        text-align: center;
+        align-items: center;
     }
 }
 @media (max-width:991px)
@@ -1057,7 +1059,9 @@ h3.my-profession
     }
     .footer p {
         color: white;
-        margin-left: 10%;
+        /* margin-left: 10%; */
+        text-align: center;
+        align-items: center;
     }
 }
 @media (max-width:767px)
