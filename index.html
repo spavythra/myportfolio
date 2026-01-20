@@ -10,11 +10,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/skins/color-4.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 
 
   <!-- ====== Style Switcher ====== -->
@@ -23,7 +18,6 @@
   <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
   <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
   <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-  <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
   <!-- ===== Main Container Start ===== -->
@@ -38,10 +32,11 @@
       </div>
       <ul class="nav">
         <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#metrics"><i class="fa fa-chart-line"></i> Metrics</a></li>
         <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-        <li><a href="#services"><i class="fa fa-list"></i>Skillsets</a></li>
-        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Projects</a></li>
-        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+        <li><a href="#services"><i class="fa fa-list"></i> Skillsets</a></li>
+        <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Projects</a></li>
+        <li><a href="#call"><i class="fa fa-phone"></i> Contact</a></li>
       </ul>
     </div>
     <!-- ===== Aside End ===== -->
@@ -54,11 +49,11 @@
             <div class="home-info padd-15">
               <h3 class="hello">Hello, my name is <span class="name">Pavithra Subramaniyam</span></h3>
               <h3 class="my-profession">I'm a <span class="typing">Front-end developer</span></h3>
-              <p>I'm a software developer actively looking for web developer, software developer, Data Engineer, DevOps engineer roles!</p>
+              <p>I'm a software developer actively looking for Software Quality Assurance, Software Developer, Data Engineer, DevOps Engineer roles!</p>
               <div class="row">
                 <div class="buttons padd-15">
               <a href="https://raw.githubusercontent.com/spavythra/CV/main/Pavithra_CV.pdf" target="_blank" class="btn">Download CV <i style="color: white;display: inline-block;margin-left: 8px;" class="fas fa-external-link-alt"></i></a>
-              <a href="https://raw.githubusercontent.com/spavythra/Cover_letter/main/Pavithra_cover_letter.pdf" target="_blank" class="btn">My Application <i style="color: white;display: inline-block;margin-left: 8px;" class="fas fa-external-link-alt"></i></a>
+              <a href="https://raw.githubusercontent.com/spavythra/Cover_letter/main/Pavithra_cover_letter.pdf" target="_blank" class="btn">Open Application <i style="color: white;display: inline-block;margin-left: 8px;" class="fas fa-external-link-alt"></i></a>
 
 
             </div>
@@ -73,26 +68,72 @@
       </section>
       <!-- ===== Home Section End ===== -->
 
+      <!-- ===== Metrics Section Start ===== -->
+      <section class="section" id="metrics">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>Professional Metrics</h2>
+              <div style="width: 80px; height: 3px; background-color: var(--skin-color); margin: 0 auto;"></div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Metric Item -->
+            <div class="metric-item padd-15">
+              <div class="metric-box">
+                <i class="fas fa-project-diagram"></i>
+                <h3 class="counter" data-target="12">0</h3>
+                <p>Projects</p>
+              </div>
+            </div>
+            <!-- Metric Item -->
+            <div class="metric-item padd-15">
+              <div class="metric-box">
+                <i class="fas fa-briefcase"></i>
+                <h3 class="counter" data-target="8">0</h3>
+                <p>Years Experience</p>
+              </div>
+            </div>
+            <!-- Metric Item -->
+            <div class="metric-item padd-15">
+              <div class="metric-box">
+                <i class="fas fa-code"></i>
+                <h3 class="counter" data-target="2">0</h3>
+                <p>Software Experience</p>
+              </div>
+            </div>
+            <!-- Metric Item -->
+            <div class="metric-item padd-15">
+              <div class="metric-box">
+                <i class="fas fa-clock"></i>
+                <h3 class="counter" data-target="5000">0</h3>
+                <p>Hours Coded</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Metrics Section End ===== -->
+
       <!-- ===== About Section Start ===== -->
       <section class="about section" id="about">
         <div class="container">
           <div class="row">
-            <div class="section-title padd-15">
-              <h2>About me</h2>
+            <div class="section-title">
+              <h2>About Me</h2>
             </div>
           </div>
           <div class="row">
             <div class="about-content padd-15">
               <div class="row">
                 <div class="about-text padd-15">
-                  <h3>I'm Pavithra, <span> Aspiring Full-stack Developer</span></h3>
-                  <p>If you are looking for a young passionate developer with interest in Full-stack, cloud and data, then you have
-                    just found the right profile. I'm Pavithra Subramaniyam from Tampere. With a Masters degree in
-                    Cloud-based Software Engineering and ~2 years of hands-on experience working with React.js,
-                    Typescript, Node.js, AWS cloud, CI/CD pipelines and Junit/Jest test frameworks. I'm also a
-                    freelancer doing e-commerce projects with an aspiration towards full stack developer/Software
-                    Architect roles.
-                    I was working as a Junior Software Developer with front-end, back-end for video based seizure detections applications in Neuro Event Labs Oy. Then, I have worked with Newelo Oy as AWS developer to develop AWS environments and deployments for Ideaparks web page and implemented a cost effective, secure, serverless architecture (for my thesis). Also practicing freelancing in my free time for about 8 months, where I worked on React front-end and PHP back-end. Currently focusing on Data Engineering courseworks. My strong knowledge areas are React.js, Node.js, Typescript, Angular, HTML, CSS, AWS (Lambda, EC2, S3, DynamoDB, VPC, Cloud Architecting), GitLab, Python, CI/CD pipelines, Terraform, Serverless framework, Docker, SQL.  </p>
+                  <h3>I'm Pavithra, <span> Full-Stack Developer, Cloud Engineer and Data QA Specialist</span></h3>
+                  <p>Master's graduate in Cloud-based Software Engineering with 8+ years of combined experience spanning quality assurance, Full-Stack development, and AWS cloud architecture. Proven track record of delivering scalable solutions using React.js, Node.js, TypeScript, and AWS services (Lambda, EC2, S3, DynamoDB).
+                    <br><br>
+                    At Newelo Oy, architected secure serverless cloud infrastructure and test-driven development automation for startups and deployed production-grade AWS environments. Previously developed video-based seizure detection applications at Neuro Event Labs using Angular and TypeScript. Started at Amazon India in Quality Assurance, performing data-driven internal process validation and SOP development—analyzing 500+ weekly vendor interactions to streamline workflows and improve cross-functional efficiency across global marketplaces.
+                    <br><br>
+                    Specialized in cloud architecture, CI/CD pipelines, Terraform, Docker, and modern JavaScript frameworks. Currently expanding expertise in Data Engineering while freelancing on e-commerce projects.
+                  </p>
                 </div>
               </div>
               <div class="row">
@@ -100,7 +141,7 @@
                   <div class="row">
                     <div class="buttons padd-15" style="margin-top: 45px;margin-left: 20px;margin-bottom: 20px;">
                       <!-- <a href="#" class="btn">Download CV</a> -->
-                      <a href="#contact" class="btn hire-me">Contact me</a>
+                      <a href="#call" class="btn hire-me">Contact me</a>
                     </div>
                   </div>
                 <!-- </div> -->
@@ -108,61 +149,29 @@
               <div class="row">
                 <div class="education padd-15">
                   <h3 class="title">Education</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- ===== timeline item ===== -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2022 - 2025
-                          </h3>
-                          <h4 class="timeline-title">Master of Science - Cloud-based Software Engineering | Vaasan Ammattikorkeakoulu</h4>
-                          <p class="timeline-text">The course is organized for working students as a part-time programme (60 ECTS)
-                            <p class="timeline-text">-  Intelligent Cloud Applications </p>
-                            <p class="timeline-text">-  Architectures of Cloud Solutions</p>
-                            <p class="timeline-text">-  Serveless Cloud Application and Solutions</p>
-
-                          </p>
-                          <div class="row">
-                              <div class="buttons" style="margin-top: 15px;margin-left: 20px;"><a href="https://raw.githubusercontent.com/spavythra/Transcripts/main/Masters_transcript.pdf" target="_blank" class="btn hire-me">View Transcript <i style="color: white;display: inline-block;margin-left: 8px;" class="fas fa-external-link-alt"></i></a>
-                              </div>
-                          </div>
-                        </div>
-                        <!-- ===== timeline item ===== -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2021 - 2022
-                          </h3>
-                          <h4 class="timeline-title">Diploma - Full stack development | Tampereen Ammattikorkeakoulu</h4>
-                          <p class="timeline-text">The course is organized by Ministry of Education and Culture (45 ECTS)</p>
-                          <p class="timeline-text">- Front-end Development</p>
-                          <p class="timeline-text">- Back-end Development</p>
-                          <p class="timeline-text">- Mobile-app Development</p>
-                          <div class="row">
-                            <div class="buttons" style="margin-top: 15px;margin-left: 20px;"><a href="https://raw.githubusercontent.com/spavythra/Transcripts/main/Diploma_transcript.pdf" target="_blank" class="btn hire-me">View Transcript <i style="color: white;display: inline-block;margin-left: 8px;" class="fas fa-external-link-alt"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                          <!-- ===== timeline item ===== -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2011 - 2015
-                          </h3>
-                          <h4 class="timeline-title">Bachelor of Engineering | Anna University | India </h4>
-                          <p class="timeline-text"> The course is completed at Sri Ramakrishna Engineering College, Coimbatore, Tamil Nadu, India (180 ECTS)</p> <p class="timeline-text">
-                          Major : Electrical and Electronics Engineering</p>
-                          <div class="row">
-                            <div class="buttons" style="margin-top: 15px;margin-left: 20px;"><a href="https://raw.githubusercontent.com/spavythra/Transcripts/main/Bachelors_Transcript.pdf" target="_blank" class="btn hire-me">View Transcript <i style="color: white;display: inline-block;margin-left: 8px;" class="fas fa-external-link-alt"></i></a>
-                            </div>
-                          </div>
-                        </div>
-
-                                 <!-- ===== timeline item ===== -->
-                      </div>
+                  <div class="education-cards">
+                    
+                    <div class="education-card">
+                      <div class="edu-year">2022 - 2025</div>
+                      <h4 class="edu-degree">MSc - Cloud-based Software Engineering</h4>
+                      <p class="edu-institute">Vaasan Ammattikorkeakoulu</p>
+                      <a href="https://raw.githubusercontent.com/spavythra/Transcripts/main/Masters_transcript.pdf" target="_blank" class="edu-link"><i class="fas fa-external-link-alt"></i></a>
                     </div>
+
+                    <div class="education-card">
+                      <div class="edu-year">2021 - 2022</div>
+                      <h4 class="edu-degree">Diploma - Full Stack Development</h4>
+                      <p class="edu-institute">Tampereen Ammattikorkeakoulu</p>
+                      <a href="https://raw.githubusercontent.com/spavythra/Transcripts/main/Diploma_transcript.pdf" target="_blank" class="edu-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                    <div class="education-card">
+                      <div class="edu-year">2011 - 2015</div>
+                      <h4 class="edu-degree">B.E - Electrical & Electronics</h4>
+                      <p class="edu-institute">Anna University, India</p>
+                      <a href="https://raw.githubusercontent.com/spavythra/Transcripts/main/Bachelors_Transcript.pdf" target="_blank" class="edu-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
                   </div>
                 </div>
                 <div class="experience padd-15">
@@ -176,8 +185,8 @@
                           <h3 class="timeline-date">
                             <i class="fa fa-calendar"></i> 2023 - 2024
                           </h3>
-                          <h4 class="timeline-title">software developer - Newelo Oy</h4>
-                          <p class="timeline-text">Creating and deploying production and development environments for web application in AWS. Working on multiple resources like EC2 instances, DynamoDB, RDS, S3, etc., on AWS. Implemented a secure serverless cloud infrastructure for small scale start-ups as my Master's thesis work.</p>
+                          <h4 class="timeline-title">Software Developer - Newelo Oy</h4>
+                          <p class="timeline-text">Created and deployed production and development environments for web applications on AWS, working with EC2 instances, DynamoDB, RDS, and S3. Implemented a secure serverless cloud infrastructure for small-scale startups as part of my Master's thesis work.</p>
                         </div>
 
                         <!-- ===== timeline item ===== -->
@@ -186,8 +195,8 @@
                           <h3 class="timeline-date">
                             <i class="fa fa-calendar"></i> 2022 - 2023
                           </h3>
-                          <h4 class="timeline-title">Junior software developer - Neuro Event labs oy</h4>
-                          <p class="timeline-text">Handling the tasks related to web application development for video-based seizure detection. Angular JS and Typescript implementation of front-end solutions with all the development process being handled in GitLab </p>
+                          <h4 class="timeline-title">Junior Software Developer - Neuro Event Labs Oy</h4>
+                          <p class="timeline-text">Handled web application development for video-based seizure detection. Implemented front-end solutions using AngularJS and TypeScript, with DevOps processes managed through GitLab CI/CD and AWS infrastructure.</p>
                         </div>
                         <!-- ===== timeline item ===== -->
                         <div class="timeline-item">
@@ -195,8 +204,8 @@
                           <h3 class="timeline-date">
                             <i class="fa fa-calendar"></i> 2015 - 2021
                           </h3>
-                          <h4 class="timeline-title">SPS Mentor - Amazon, India</h4>
-                          <p class="timeline-text">Trained on Finance, Catalog, VCM, Imaging, and Chargeback topics in marketplaces around the world. Mentoring new team members. Un-time and on-time process support during bottlenecks. Reviewing and resolving long term unanswered vendor queries. Expediting query handling with in-depth analysis to reduce other team dependencies. Expertise in Backlog/Aged case clearance.</p>
+                          <h4 class="timeline-title">Quality Assurance Specialist - Amazon, India</h4>
+                          <p class="timeline-text">Executed 500+ weekly manual test cases with Excel analysis using pivot tables and VLOOKUPs, reducing cross-team dependencies by 21% through Kaizen defect resolution. Mentored a 5-person team on QA best practices and Amazon validations, achieving 16% faster query handling with zero critical escalations. Led regression testing and root-cause analysis on vendor pipelines using traceability matrices to ensure platform integrity during peak transactions. Trained across Finance, Catalog, VCM, Imaging, and Chargeback topics in global marketplaces, specializing in backlog and aged case clearance.</p>
                             </div>
                              <!-- ===== timeline item ===== -->
 
@@ -212,182 +221,214 @@
       </section>
       <!-- ===== About Section End ===== -->
 
-
-
       <!-- ===== Skills Section Start ===== -->
-      <section class="service section" id="services">
+      <section class="main-content" id="services">
         <div class="container">
           <div class="row">
-            <div class="section-title padd-15">
-              <h2>Languages - skills</h2>
+            <div class="section-title">
+              <h2>Technical Skills & Expertise</h2>
             </div>
           </div>
-          <div class="circular">
-            <div class="wrapper">
-              <!-- ===== Skills break ===== -->
-
-              <div class="card python">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
+          
+          <!-- Skills Categories -->
+          <div class="skills-container">
+            
+            <!-- Cloud & DevOps -->
+            <div class="skill-category">
+              <h3 class="category-title"><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+              <div class="skills-list">
+                <div class="skill-item" data-percent="85">
+                  <div class="skill-info">
+                    <span class="skill-name">AWS (EC2, VPC, S3, Lambda, DynamoDB)</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
                 </div>
-                <div class="text">AWS</div>
+                <div class="skill-item" data-percent="70">
+                  <div class="skill-info">
+                    <span class="skill-name">Docker & Kubernetes</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="85">
+                  <div class="skill-info">
+                    <span class="skill-name">GitLab CI/CD</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
               </div>
-
-              <!-- ===== Skills break ===== -->
-              <div class="card react">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">React JS</div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-              <div class="card Angular">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">Angular & Typescript</div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-              <div class="card HTML5">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">HTML5 & CSS</div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-              <div class="card js">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">Node JS</div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-              <div class="card python">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">Python</div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-              <div class="card sql">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">SQL & PostgreSQL</div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-              <div class="card cpp">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">Java & C++</div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-              <div class="card testing">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">JUnit & Jest </div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-              <div class="card git">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">Git & GitLab</div>
-              </div>
-              <!-- <div class="card swift">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">React Native & Swift</div>
-              </div> == -->
-              <!-- ===== Skills break ===== -->
-
-              <div class="card cloud">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">Docker & Kubernetes</div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-              <div class="card Fin">
-                <div class="circle">
-                  <div class="bar"></div>
-                  <div class="box"><span></span></div>
-                </div>
-                <div class="text">Finnish</div>
-              </div>
-              <!-- ===== Skills break ===== -->
-
-
             </div>
-            <script>
-              let options = {
-                startAngle: -1.55,
-                size: 150,
-                value: 0.85,
-                fill: {gradient: ['#a445b2', '#fa4299']}
-              }
-              $(".circle .bar").circleProgress(options).on('circle-animation-progress',
-              function(event, progress, stepValue){
-                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
-              });
-              $(".js .bar").circleProgress({
-                value: 0.70
-              });
-              $(".react .bar").circleProgress({
-                value: 0.75
-              });
-              $(".python .bar").circleProgress({
-                value: 0.7
-              });
-              $(".sql .bar").circleProgress({
-                value: 0.75
-              });
-              $(".cpp .bar").circleProgress({
-                value: 0.55
-              });
-              $(".Fin .bar").circleProgress({
-                value: 0.35
-              });
-              $(".Angular .bar").circleProgress({
-                value: 0.60
-              });
-              // $(".swift .bar").circleProgress({
-              //  value: 0.55
-              //});
-              $(".testing .bar").circleProgress({
-                value: 0.60
-              });
-              $(".cloud .bar").circleProgress({
-                value: 0.75
-              });
-              $(".git .bar").circleProgress({
-                value: 0.85
-              });
-            </script>
+
+            <!-- Frontend Development -->
+            <div class="skill-category">
+              <h3 class="category-title"><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+              <div class="skills-list">
+                <div class="skill-item" data-percent="80">
+                  <div class="skill-info">
+                    <span class="skill-name">React JS</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="70">
+                  <div class="skill-info">
+                    <span class="skill-name">Angular & TypeScript</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="85">
+                  <div class="skill-info">
+                    <span class="skill-name">HTML5 & CSS3</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="skill-category">
+              <h3 class="category-title"><i class="fas fa-server"></i> Backend Development</h3>
+              <div class="skills-list">
+                <div class="skill-item" data-percent="70">
+                  <div class="skill-info">
+                    <span class="skill-name">Node.js & Express</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="75">
+                  <div class="skill-info">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="75">
+                  <div class="skill-info">
+                    <span class="skill-name">SQL & PostgreSQL</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="55">
+                  <div class="skill-info">
+                    <span class="skill-name">Java & C++</span>
+                    <span class="skill-percent">55%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- QA & Testing -->
+            <div class="skill-category">
+              <h3 class="category-title"><i class="fas fa-vial"></i> Quality Assurance & Testing</h3>
+              <div class="skills-list">
+                <div class="skill-item" data-percent="70">
+                  <div class="skill-info">
+                    <span class="skill-name">Playwright</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="65">
+                  <div class="skill-info">
+                    <span class="skill-name">JUnit, Jest & Pytest</span>
+                    <span class="skill-percent">65%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="75">
+                  <div class="skill-info">
+                    <span class="skill-name">Test Automation & CI/CD</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="80">
+                  <div class="skill-info">
+                    <span class="skill-name">Code Review & Quality Assurance</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages & Other Skills -->
+            <div class="skill-category">
+              <h3 class="category-title"><i class="fas fa-language"></i> Languages & Soft Skills</h3>
+              <div class="skills-list">
+                <div class="skill-item" data-percent="35">
+                  <div class="skill-info">
+                    <span class="skill-name">Finnish (Suomi)</span>
+                    <span class="skill-percent">35%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="80">
+                  <div class="skill-info">
+                    <span class="skill-name">English (Professional)</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="75">
+                  <div class="skill-info">
+                    <span class="skill-name">Technical Documentation</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-percent="75">
+                  <div class="skill-info">
+                    <span class="skill-name">Agile & Scrum Methodologies</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -395,92 +436,274 @@
       <!-- ===== Skills Section End ===== -->
 
       <!-- ===== Projects Section Start ===== -->
-      <section class="portfolio section" id="portfolio">
+      <section class="main-content" id="portfolio">
         <div class="container">
           <div class="row">
-            <div class="section-title padd-15">
-              <h2>Projects</h2>
+            <div class="section-title">
+              <h2>Featured Projects</h2>
             </div>
           </div>
-          <h3 class="contact-title padd-15">Explore my code!</h3>
-            <!-- <h4 class="contact-sub-title padd-15">Click on the title!</h4> -->
+          
+          <!-- Project Filter Tabs -->
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="cloud">Cloud & AWS</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="mobile">Mobile & Desktop</button>
+          </div>
 
           <div class="project-body">
-            <!-- ====== Project item start ====== -->
-
-            <div class="owl-carousel owl-theme mt-5">
-              <div class="owl-item">
-                <div class="project-card">
-                    <div class="img-card"><img src="img/serverless.png" alt=""></div>
-                    <div class="testimonial-1 mt-4 mb-2">This project delivers a sercure, cost-effective, serverless cloud infrastructure template which can be used by small scale startups for a seamless development and project delivery. The integration, testing and deployments are done on AWS infrastructure
+            <!-- ====== Project Grid Start ====== -->
+            <div class="projects-grid">
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="cloud">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/ideapark.png" alt="Ideapark Lempäälä">
+                      <div class="project-overlay">
+                        <span class="project-tag">AWS</span>
+                        <span class="project-tag">DevOps</span>
+                        <span class="project-tag">React</span>
+                      </div>
                     </div>
-                    <div class="name"><a href="https://github.com/spavythra/Masters_thesis/tree/dev" target="_blank" style="color: white;" class="name-content">Thesis - Serverless cloud infrastructure for small scale startups<i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
+                    <div class="project-content">
+                      <h3 class="project-title">Ideapark Lempäälä - DevOps & Frontend</h3>
+                      <p class="project-description">Led DevOps and frontend development for production e-commerce platform at Newelo Oy. Architected AWS infrastructure (EC2, RDS, S3), automated CI/CD pipelines, and developed React-based frontend features for seamless user experience and deployment.</p>
+                      <div class="project-footer">
+                        <a href="https://lempaala.ideapark.fi/" target="_blank" class="project-link">
+                          <i class="fas fa-external-link-alt"></i> Live Site
+                        </a>
+                        <span class="project-type">Production</span>
+                      </div>
+                    </div>
                 </div>
               </div>
-              <div class="owl-item">
-                <div class="project-card">
-                    <div class="img-card"> <img src="img/suomi.png" alt=""> </div>
-                    <div class="testimonial-1 mt-4 mb-2"> Language app has a react based front-end, node js based back-end, deployment to the heroku cloud. Application has two different views. One is for admin, where teacher/admin can add/update/delete words into the API endpoint which updates SQL database. Other view is user view, in which user can practice the words and they will get the results.  </div>
-                    <div class="name" ><a href="https://learnsuomi.onrender.com" target="_blank" style="color: white;" class="name-content"> EasyLearn Suomi <i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="web">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/nelli.png" alt="Neuro Event Labs">
+                      <div class="project-overlay">
+                        <span class="project-tag">Angular</span>
+                        <span class="project-tag">TypeScript</span>
+                        <span class="project-tag">GitLab CI/CD</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">Video-Based Seizure Detection Platform</h3>
+                      <p class="project-description">Developed front-end solutions for medical video-based seizure detection application at Neuro Event Labs Oy. Implemented with AngularJS and TypeScript, managing DevOps processes through GitLab CI/CD and AWS infrastructure.</p>
+                      <div class="project-footer">
+                        <span class="project-type">Healthcare Tech</span>
+                      </div>
+                    </div>
                 </div>
               </div>
-              <div class="owl-item">
-                  <div class="project-card">
-                      <div class="img-card" > <img src="img/Omaheatmap.png" alt=""> </div>
-                      <div class="testimonial-1 mt-4 mb-2"> The purpose is to show the amount of activity for a given calendar day, relative to other days in the calendar with the given GitHub username. The chosen colour palette should provide balanced contrast and good glanceability. Additionally, commit counts and commit informations are displayed for each day </div>
-                      <div class="name"><a href=https://githeatmap.onrender.com target="_blank" style="color: white;" class="name-content"> Oma-git heatmap<i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="cloud">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/serverless.png" alt="Serverless Infrastructure">
+                      <div class="project-overlay">
+                        <span class="project-tag">AWS</span>
+                        <span class="project-tag">Serverless</span>
+                        <span class="project-tag">Cloud</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">Serverless Cloud Infrastructure</h3>
+                      <p class="project-description">Secure, cost-effective serverless cloud infrastructure template for small scale startups. Features AWS integration, testing, and automated deployments.</p>
+                      <div class="project-footer">
+                        <a href="https://github.com/spavythra/Masters_thesis/tree/dev" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i> View Code
+                        </a>
+                        <span class="project-type">Master's Thesis</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="web">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/suomi.png" alt="EasyLearn Suomi">
+                      <div class="project-overlay">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">SQL</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">EasyLearn Suomi</h3>
+                      <p class="project-description">Full-Stack language learning app with React frontend and Node.js backend. Features admin panel for word management and interactive practice modules for users.</p>
+                      <div class="project-footer">
+                        <a href="https://learnsuomi.onrender.com" target="_blank" class="project-link">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <span class="project-type">Full Stack</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="web">
+                  <div class="project-card-new">
+                      <div class="project-image">
+                        <img src="img/Omaheatmap.png" alt="Git Heatmap">
+                        <div class="project-overlay">
+                          <span class="project-tag">React</span>
+                          <span class="project-tag">GitHub API</span>
+                          <span class="project-tag">Visualization</span>
+                        </div>
+                      </div>
+                      <div class="project-content">
+                        <h3 class="project-title">Oma-git Heatmap</h3>
+                        <p class="project-description">GitHub activity visualization tool showing commit patterns and activity levels with an intuitive color-coded calendar interface for any GitHub username.</p>
+                        <div class="project-footer">
+                          <a href="https://githeatmap.onrender.com" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                          </a>
+                          <span class="project-type">Data Viz</span>
+                        </div>
+                      </div>
                   </div>
               </div>
-              <div class="owl-item">
-                <div class="project-card">
-                    <div class="img-card" > <img src="img/digit.png"> </div>
-                    <div class="testimonial-1 mt-4 mb-2"> Digit Recognition App using React JS and Python Flask. App gets the data as an image and predicts the digit from the data-model, Uses Azure cognitive translation and speech services to API endpoint and display, pronounce the identified/translated digit.App comprises microservices architecture, containerized with docker, and deployed using Kubernetes (minikube).</div>
-                    <div class="name"><a href=https://github.com/spavythra/kube_digit_identification target="_blank" style="color: white;" class="name-content"> Digit Recognition App<i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
+              <!-- Project Card -->
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="cloud">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/digit.png" alt="Digit Recognition">
+                      <div class="project-overlay">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Kubernetes</span>
+                        <span class="project-tag">Azure</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">Digit Recognition App</h3>
+                      <p class="project-description">ML-powered digit recognition with React frontend and Python Flask backend. Features Azure cognitive services for translation/speech, containerized with Docker and deployed on Kubernetes.</p>
+                      <div class="project-footer">
+                        <a href="https://github.com/spavythra/kube_digit_identification" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i> View Code
+                        </a>
+                        <span class="project-type">ML & Cloud</span>
+                      </div>
+                    </div>
                 </div>
-              </div><div class="owl-item">
-                <div class="project-card">
-                    <div class="img-card" > <img src="img/BMS.jpg"> </div>
-                    <div class="testimonial-1 mt-4 mb-2"> The purpose is to show down the Battery data fetched from a remote API in two views. List view where each row in the list must represent one fetched API entity with filters, sort and search functions. Multiple pages of battery data. Individual entity view where individual battery status in a separate page with visualised status in React app</div>
-                    <div class="name"><a href=https://batterymonitoring.onrender.com target="_blank" style="color: white;" class="name-content"> Battery Monitoring System<i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
-                </div>
-              </div>
-              <div class="owl-item">
-                <div class="project-card">
-                    <div class="img-card"> <img src="img/weatherApp.jpg" alt=""> </div>
-                    <div class="testimonial-1 mt-4 mb-2"> This is an iOS weather application created as a part of mobile development coursework. User can choose one of these and display either one of the cities weather or the GPS, add cities to the list and remove cities from the list. It accesses the weather data from the remote API of openweathermap.org  </div>
-                    <div class="name"><a href="https://github.com/spavythra/iOSweatherApp" target="_blank" style="color: white;" class="name-content">MyWeather App<i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
-                </div>
-              </div>
-              <div class="owl-item">
-                  <div class="project-card">
-                      <div class="img-card"> <img src="img/todo.png" alt=""> </div>
-                      <div class="testimonial-1 mt-4 mb-2"> This project has been created to list down our day-to-day reminders. User can rename the todo tasks and categorize them as per our need. Different filters and views are implemented. I have also added the instruction page for know-how, to access the application. MyToDo list was created as a part of Front-end course-work. </div>
-                      <div class="name"><a href="https://github.com/spavythra/React/tree/main/Myto-do" target="_blank" style="color: white;" class="name-content">MyTo-Do App<i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
-                  </div>
-              </div>
-              <div class="owl-item">
-                <div class="project-card">
-                    <div class="img-card"> <img src="img/dice2.jpg" alt=""> </div>
-                    <div class="testimonial-1 mt-4 mb-2"> Dice game was one of my project in my python course-work. Project was structured in a way that user can add "n" number of players along with "n" number of dices with active user-interface (UI) resolution adjustable for different screens. </div>
-                    <div class="name" ><a href="https://github.com/spavythra/python/tree/main/DiceGame_MultiX" target="_blank" style="color: white;" class="name-content"> Dice Game<i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
-                </div>
-              </div>
-              <div class="owl-item">
-                <div class="project-card">
-                    <div class="img-card"> <img src="img/cpp.jpg" alt=""> </div>
-                    <div class="testimonial-1 mt-4 mb-2"> Education-center is a C++ program reads the course collection data of different education centers from a file at startup, stores them in a suitable data structure and gives the user the opportunity to search the data structure in question with certain commands. It was implemented in a way to practice complex data structure. </div>
-                    <div class="name"> <a href="https://github.com/spavythra/cpp/tree/main/education_center" target="_blank" style="color: white;" class="name-content">Course Database <i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
-                </div>
-              </div>
-              <div class="owl-item">
-                  <div class="project-card">
-                      <div class="img-card"> <img src="img/Portfolio.jpg" alt=""> </div>
-                      <div class="testimonial-1 mt-4 mb-2"> I have created this portfolio to showcase my proficiency. This is deployed in git for recruiters to view. My CV and cover letter and can be dowloaded from the Home section. Transcript can also be downloaded from Education section. Navigation is self-explanatory. </div>
-                      <div class="name"><a href="https://github.com/spavythra/myportfolio" target="_blank" style="color: white;" class="name-content"> My Portfolio<i style="color: white;display: inline-block;margin-left: 12px;" class="fas fa-external-link-alt"></i></a> </div>
-                  </div>
               </div>
 
-          </div>
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="web">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/BMS.jpg" alt="Battery Monitoring System">
+                      <div class="project-overlay">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">API</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">Battery Monitoring System</h3>
+                      <p class="project-description">Real-time battery data visualization with list and detail views. Features filtering, sorting, search functionality, and individual battery status visualization.</p>
+                      <div class="project-footer">
+                        <a href="https://batterymonitoring.onrender.com" target="_blank" class="project-link">
+                          <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <span class="project-type">IoT Dashboard</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="mobile">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/weatherApp.jpg" alt="Weather App">
+                      <div class="project-overlay">
+                        <span class="project-tag">iOS</span>
+                        <span class="project-tag">Swift</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">MyWeather App</h3>
+                      <p class="project-description">iOS weather application with GPS location support and city management. Integrates OpenWeatherMap API for real-time weather data.</p>
+                      <div class="project-footer">
+                        <a href="https://github.com/spavythra/iOSweatherApp" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i> View Code
+                        </a>
+                        <span class="project-type">Mobile App</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="web">
+                  <div class="project-card-new">
+                      <div class="project-image">
+                        <img src="img/todo.png" alt="Todo App">
+                        <div class="project-overlay">
+                          <span class="project-tag">React</span>
+                          <span class="project-tag">Frontend</span>
+                        </div>
+                      </div>
+                      <div class="project-content">
+                        <h3 class="project-title">MyTo-Do App</h3>
+                        <p class="project-description">Task management application with categorization, filtering, and custom views. Clean interface with comprehensive user instructions.</p>
+                        <div class="project-footer">
+                          <a href="https://github.com/spavythra/React/tree/main/Myto-do" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                          </a>
+                          <span class="project-type">Web App</span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="mobile">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/dice2.jpg" alt="Dice Game">
+                      <div class="project-overlay">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">GUI</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">Dice Game</h3>
+                      <p class="project-description">Multiplayer dice game with Python GUI. Supports unlimited players and dice with responsive UI that adapts to different screen resolutions.</p>
+                      <div class="project-footer">
+                        <a href="https://github.com/spavythra/python/tree/main/DiceGame_MultiX" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i> View Code
+                        </a>
+                        <span class="project-type">Desktop App</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="mobile">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/cpp.jpg" alt="Course Database">
+                      <div class="project-overlay">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">Data Structures</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">Course Database System</h3>
+                      <p class="project-description">C++ application for managing education center course data with advanced data structures. Features file I/O, efficient searching, and complex data organization.</p>
+                      <div class="project-footer">
+                        <a href="https://github.com/spavythra/cpp/tree/main/education_center" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i> View Code
+                        </a>
+                        <span class="project-type">Backend</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -488,65 +711,49 @@
 
 
       <!-- ===== Contact Section Start ===== -->
-      <section class="contact section" id="contact">
+      <section class="main-content" id="call">
         <div class="container">
           <div class="row">
-            <div class="section-title padd-15">
-              <h2>Contact me</h2>
+            <div class="section-title">
+              <h2>Get In Touch</h2>
+              <div style="width: 80px; height: 3px; background-color: var(--skin-color); margin: 0 auto;"></div>
             </div>
           </div>
-          <div class="row">
-            <!-- ===== Contact info item start ====== -->
-              <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-              <h4>Location</h4>
-              <p>Linnainmaa, Tampere</p>
+          <div class="row" style="display: flex; justify-content: center; gap: 30px; flex-wrap: nowrap;">
+            
+            <div class="contact-box" style="flex: 0 0 calc(25% - 30px); text-align: center; padding: 30px 20px;">
+              <div style="margin-bottom: 15px;">
+                <i class="fa fa-phone" style="font-size: 40px; color: var(--skin-color);"></i>
               </div>
-
-            <!-- ===== Contact info item start ====== -->
-              <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-              <h4>Mobile</h4>
-              <p>+358 46 9555 860</p>
-              </div>
-
-            <!-- ===== Contact info item start ====== -->
-              <div class="contact-info-item padd-15">
-              <div class="icon"><a href="mailto:pavithra.subramaniyam@outlook.com"><i class="fa fa-envelope"></i></a></div>
-              <h4>e-mail</h4>
-              <p>pavithra.subramaniyam@outlook.com</p>
-
-              </div>
-          </div>
-
-            <!-- ===== Contact info item start ====== -->
-            <h3 class="contact-title padd-15">Want to connect via my social profile?</h3>
-            <h4 class="contact-sub-title padd-15">Click on below icon to redirect!</h4>
-            <div class="row">
-
-            <!-- ===== Contact info item start ====== -->
-              <div class="contact-info-item-2 padd-15">
-                <div class="icon"><a target="_blank" href="https://www.linkedin.com/in/spavi/"><i class="fab fa-linkedin fa-2x"></i></a></div>
-                <h4>LinkedIn</h4>
-                <!-- <p>https://www.linkedin.com/in/spavi/</p> -->
-              </div>
-              <!-- ===== Contact info item end ====== -->
-            <!-- ===== Contact info item start ====== -->
-              <div class="contact-info-item padd-15">
-                <div class="icon"><a href="mailto:pavithra.subramaniyam@outlook.com"><i class="fa fa-envelope"></i></a></div>
-                <h4>Mail me</h4>
-              </div>
-
-            <!-- ===== Contact info item start ====== -->
-              <div class="contact-info-item-2 padd-15">
-                <div class="icon"><a target="_blank" href="https://github.com/spavythra"><i class="fab fa-github fa-2x"></i></a></div>
-                <h4>Github</h4>
-                <!-- <p>https://github.com/spavythra</p> -->
-              </div>
-
-              <!-- ===== Contact info item end ====== -->
+              <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 10px;">Call</h4>
+              <a href="tel:+358469555860" style="color: var(--text-black-700); text-decoration: none; font-size: 16px;">+358 46 9555 860</a>
             </div>
 
+            <div class="contact-box" style="flex: 0 0 calc(25% - 30px); text-align: center; padding: 30px 20px;">
+              <div style="margin-bottom: 15px;">
+                <i class="fa fa-envelope" style="font-size: 40px; color: var(--skin-color);"></i>
+              </div>
+              <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 10px;">Email</h4>
+              <a href="mailto:pavithra.subramaniyam@outlook.com" style="color: var(--text-black-700); text-decoration: none; font-size: 16px;">pavithra.subramaniyam@outlook.com</a>
+            </div>
+
+            <div class="contact-box" style="flex: 0 0 calc(25% - 30px); text-align: center; padding: 30px 20px;">
+              <div style="margin-bottom: 15px;">
+                <i class="fab fa-linkedin" style="font-size: 40px; color: var(--skin-color);"></i>
+              </div>
+              <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 10px;">LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/spavi/" target="_blank" style="color: var(--text-black-700); text-decoration: none; font-size: 16px;">linkedin.com/in/spavi</a>
+            </div>
+
+            <div class="contact-box" style="flex: 0 0 calc(25% - 30px); text-align: center; padding: 30px 20px;">
+              <div style="margin-bottom: 15px;">
+                <i class="fab fa-github" style="font-size: 40px; color: var(--skin-color);"></i>
+              </div>
+              <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 10px;">GitHub</h4>
+              <a href="https://github.com/spavythra" target="_blank" style="color: var(--text-black-700); text-decoration: none; font-size: 16px;">github.com/spavythra</a>
+            </div>
+
+          </div>
         </div>
       </section>
       <!-- ===== Contact Section End ===== -->
@@ -559,30 +766,13 @@
   <!-- ===== Main Container End ===== -->
 
 
-  <footer class="footer"><p >Pavithra Subramaniyam - Last updated Nov 25, 2025</p></footer>
-  <!-- ===== Style Switcher Start ===== -->
-  <div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
-      <i class="fas fa-cog fa-spin"></i>
-    </div>
-    <div class="day-night s-icon">
-      <i class="fas "></i>
-    </div>
-    <h4>Theme Colors</h4>
-    <div class="colors">
-      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-    </div>
-  </div>
-  <!-- ===== Style Switcher End ===== -->
+  <footer class="footer" style="text-align: center; padding: 20px;">
+    <p>&copy; Pavithra Subramaniyam - Last updated <span id="update-date">January 18, 2026</span></p>
+  </footer>
   <!-- ===== JS Files ===== -->
   <script src="project.js"></script>
     <script src="app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
-  <script src="js/style-switcher.js"></script>
 </body>
 </html>
