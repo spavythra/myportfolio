@@ -158,13 +158,14 @@ ul
     height: 100%;
     border-left: 1px solid var(--bg-black-50);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     z-index: 10;
 }
 .aside .logo
 {
-    position: absolute;
+    /* position: absolute; */
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
@@ -248,10 +249,10 @@ ul
     top: 6px;
     left: 0;
 }
-.aside .nav
+/* .aside .nav
 {
     margin-top: 50px;
-}
+} */
 .aside .nav li
 {
     margin-bottom: 20px;
@@ -969,21 +970,21 @@ h3.my-profession
     .skill-category {
         padding: 20px;
     }
-    
+
     .category-title {
         font-size: 18px;
         margin-bottom: 18px;
         padding-bottom: 10px;
     }
-    
+
     .skills-list {
         gap: 15px;
     }
-    
+
     .skill-name {
         font-size: 14px;
     }
-    
+
     .skill-percent {
         font-size: 13px;
     }
@@ -1202,7 +1203,7 @@ h3.my-profession
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .filter-btn {
         padding: 8px 18px;
         font-size: 13px;
