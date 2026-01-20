@@ -1,113 +1,200 @@
-// links
+// Navigation active state
+const navLinks = document.querySelectorAll('.aside .nav li a');
 
-const links = document.querySelectorAll('.link');
-
-links.forEach(link => {
+// Update active state on click
+navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        links.forEach(ele => ele.classList.remove('active'));
+        navLinks.forEach(ele => ele.classList.remove('active'));
         link.classList.add('active');
     })
-})
+});
 
-// creating dynamic project card
+// Update active state on scroll
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.section');
+    const scrollPosition = window.scrollY + 100;
 
-// const projectContainer = document.querySelector('.project-container');
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
 
-// projects.forEach(project => {
-//     projectContainer.innerHTML += `
-//     <div class="project-card" data-tags="#all, ${project.tags}">
-//         <img src="/img/${project.image}" alt="">
-//         <div class="content">
-//             <h1 class="project-name">${project.name}</h1>
-//             <span class="tags">${project.tags}</span>
-//         </div>
-//     </div>
-//     `;
-// })
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${sectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+});
 
-// filters
+// Project Filtering
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card-wrapper');
 
-// const filters = document.querySelectorAll('.filter-btn');
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
 
-// filters.forEach(filterBtn => {
-//     filterBtn.addEventListener('click', () => {
-//         let id = filterBtn.getAttribute('id');
-//         let projectCards = document.querySelectorAll('.project-card');
-//         projectCards.forEach(card => {
-//             if(card.getAttribute('data-tags').includes(id)){
-//                 card.classList.remove('hide');
-//             } else{
-//                 card.classList.add('hide');
-//             }
-//         })
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
 
-//         filters.forEach(btn => btn.classList.remove('active'));
-//         filterBtn.classList.add('active');
-//     })
-// })
-
-//contact form
-// const contactBtn = document.querySelector('.contact-btn');
-// const firstName = document.querySelector('.first-name');
-// const lastName = document.querySelector('.last-name');
-// const email = document.querySelector('.email');
-// const msg = document.querySelector('.message');
-
-// contactBtn.addEventListener('click', () => {
-//     if(firstName.value.length && lastName.value.length && email.value.length && msg.value.length){
-//         fetch('/mail', {
-//             method: 'post',
-//             headers: new Headers({'Content-Type': 'application/json'}),
-//             body: JSON.stringify({
-//                 firstname: firstName.value,
-//                 lastname: lastName.value,
-//                 email: email.value,
-//                 msg: msg.value,
-//             })
-//         })
-//         .then(res => res.json())
-//         .then(data => {
-//             alert(data);
-//         })
-//     }
-// })
-
-//toggle button
-// const toggleBtn = document.querySelector('.toggle-btn');
-// const linkContainer = document.querySelector('.links-container');
-
-// toggleBtn.addEventListener('click', () => {
-//     toggleBtn.classList.toggle('active');
-//     linkContainer.classList.toggle('show');
-// })
-
-// document.querySelector('#contact-form').addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     e.target.elements.name.value = '';
-//     e.target.elements.email.value = '';
-//     e.target.elements.message.value = '';
-//   });
-
-$(document).ready(function () {
-    var silder = $(".owl-carousel");
-    silder.owlCarousel({
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: false,
-    items: 1,
-    stagePadding: 20,
-    center: true,
-    nav: false,
-    margin: 50,
-    dots: true,
-    loop: true,
-    responsive: {
-    0: { items: 1 },
-    480: { items: 1 },
-    575: { items: 1 },
-    768: { items: 2 },
-    991: { items: 2 },
-    1200: { items: 2 }
+                // Filter projects
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.classList.remove('hide');
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            card.classList.add('hide');
+                        }, 300);
+                    }
+                });
+            });
+        });
     }
+
+    // Metrics Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+
+    const animateCounter = (counter) => {
+        const target = +counter.getAttribute('data-target');
+        let current = +counter.innerText;
+        const increment = target / speed;
+        const hasDecimal = target % 1 !== 0;
+
+        if (current < target) {
+            current = Math.min(current + increment, target);
+            counter.innerText = hasDecimal ? current.toFixed(1) : Math.ceil(current);
+            setTimeout(() => animateCounter(counter), 10);
+        } else {
+            counter.innerText = hasDecimal ? target.toFixed(1) : target + '+';
+        }
+    };
+
+    // Skills Bar Animation (Progressive Enhancement)
+    // The bars are already visible via CSS, this just adds smooth animation
+    const animateSkills = () => {
+        const skillItems = document.querySelectorAll('.skill-item');
+        skillItems.forEach((item, index) => {
+            const progressBar = item.querySelector('.skill-progress');
+            if (progressBar) {
+                // Temporarily set to 0 to trigger animation
+                const finalWidth = progressBar.style.width || getComputedStyle(progressBar).width;
+                progressBar.style.width = '0';
+
+                setTimeout(() => {
+                    const percent = item.getAttribute('data-percent');
+                    progressBar.style.width = percent + '%';
+                    progressBar.classList.add('animated');
+                }, 100 + (index * 50));
+            }
+        });
+    };
+
+    // Use Intersection Observer for animation on scroll
+    const skillsObserverCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateSkills();
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const skillsObserver = new IntersectionObserver(skillsObserverCallback, {
+        threshold: 0.2,
+        rootMargin: '0px'
     });
+
+    const skillsContainer = document.querySelector('.skills-container');
+    if (skillsContainer) {
+        skillsObserver.observe(skillsContainer);
+    }
+
+    // Trigger counter animation immediately on load
+    if (counters.length > 0) {
+        counters.forEach(counter => {
+            counter.innerText = '0';
+            setTimeout(() => animateCounter(counter), 100);
+        });
+    }
+});
+
+// Smooth scroll for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && href.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
     });
+});
+
+// Visitor Counter - Simple localStorage based counter
+function updateVisitorCount() {
+    const visitorCountElement = document.getElementById('visitor-count');
+    const updateDateElement = document.getElementById('update-date');
+
+    if (visitorCountElement) {
+        // Get or initialize visitor count
+        let count = localStorage.getItem('visitorCount');
+        if (!count) {
+            count = Math.floor(Math.random() * 500) + 100; // Start with random number 100-600
+        } else {
+            count = parseInt(count);
+        }
+
+        // Check if this is a new session (not visited in last 30 minutes)
+        const lastVisit = localStorage.getItem('lastVisit');
+        const now = Date.now();
+
+        if (!lastVisit || (now - parseInt(lastVisit)) > 1800000) { // 30 minutes
+            count++;
+            localStorage.setItem('visitorCount', count);
+        }
+
+        localStorage.setItem('lastVisit', now);
+
+        // Display count with animation
+        let currentCount = 0;
+        const increment = count / 50;
+        const timer = setInterval(() => {
+            currentCount += increment;
+            if (currentCount >= count) {
+                visitorCountElement.textContent = count.toLocaleString();
+                clearInterval(timer);
+            } else {
+                visitorCountElement.textContent = Math.floor(currentCount).toLocaleString();
+            }
+        }, 20);
+    }
+
+    // Update date to today
+    if (updateDateElement) {
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        updateDateElement.textContent = today.toLocaleDateString('en-US', options);
+    }
+}
+
+// Call on page load
+document.addEventListener('DOMContentLoaded', updateVisitorCount);
