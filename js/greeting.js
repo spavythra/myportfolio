@@ -21,7 +21,7 @@ function setOrgGreeting(orgRaw){
   if(!el) return;
   if(!orgRaw) { hide(el); return; }
   // remove common company suffixes
-  let org = orgRaw.replace(/\b(Inc\.?|LLC|Ltd\.?|Limited|Corporation|Corp\.?|LLP)\b/gi, '').trim();
+  let org = orgRaw.replace(/\b(Inc\.?|LLC|Ltd\.?|Limited|Corporation|Oyj|Oy|Corp\.?|LLP)\b/gi, '').trim();
   // shorten if excessively long
   if(org.split(' ').length > 4) org = org.split(' ').slice(0,2).join(' ');
   el.textContent = `Hi there from ${org}`;
