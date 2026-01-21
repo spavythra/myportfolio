@@ -1,3 +1,4 @@
+// greeting.js
 // Purpose: show cookie consent popup on load; if accepted, fetch visitor's org via ipapi.co and display greeting.
 // Uses localStorage key "portfolio_consent" to store { personalization: true/false, ts }
 // No personal names are collected. Only organization inference when consent is given.
