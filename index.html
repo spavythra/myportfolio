@@ -82,7 +82,7 @@
             <div class="metric-item padd-15">
               <div class="metric-box">
                 <i class="fas fa-project-diagram"></i>
-                <h3 class="counter" data-target="6">0</h3>
+                <h3 class="counter" data-target="5">0</h3>
                 <p>Projects</p>
               </div>
             </div>
@@ -427,15 +427,14 @@
           <!-- Project Filter Tabs -->
           <div class="project-filters">
             <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="cloud">Cloud & AWS</button>
-            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="public">Public Repo</button>
+            <button class="filter-btn" data-filter="private">Private Repo</button>
           </div>
 
           <div class="project-body">
-            <!-- ====== Project Grid Start ====== -->
             <div class="projects-grid">
               <!-- Project Card -->
-              <div class="project-card-wrapper" data-category="cloud">
+              <div class="project-card-wrapper" data-category="public">
                 <div class="project-card-new">
                     <div class="project-image">
                       <img src="img/ideapark.png" alt="Ideapark Lempäälä">
@@ -457,51 +456,8 @@
                     </div>
                 </div>
               </div>
-              <!-- Project Card -->
-              <div class="project-card-wrapper" data-category="web">
-                <div class="project-card-new">
-                    <div class="project-image">
-                      <img src="img/nelli.png" alt="Neuro Event Labs">
-                      <div class="project-overlay">
-                        <span class="project-tag">Angular</span>
-                        <span class="project-tag">TypeScript</span>
-                        <span class="project-tag">GitLab CI/CD</span>
-                      </div>
-                    </div>
-                    <div class="project-content">
-                      <h3 class="project-title">Video-Based Seizure Detection Platform</h3>
-                      <p class="project-description">Developed front-end solutions for medical video-based seizure detection application at Neuro Event Labs Oy. Implemented with AngularJS and TypeScript, managing DevOps processes through GitLab CI/CD and AWS infrastructure.</p>
-                      <div class="project-footer">
-                        <span class="project-type">Healthcare Tech</span>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!-- Project Card -->
-              <div class="project-card-wrapper" data-category="cloud">
-                <div class="project-card-new">
-                    <div class="project-image">
-                      <img src="img/serverless.png" alt="Serverless Infrastructure">
-                      <div class="project-overlay">
-                        <span class="project-tag">AWS</span>
-                        <span class="project-tag">Serverless</span>
-                        <span class="project-tag">Cloud</span>
-                      </div>
-                    </div>
-                    <div class="project-content">
-                      <h3 class="project-title">Serverless Cloud Infrastructure</h3>
-                      <p class="project-description">Secure, cost-effective serverless cloud infrastructure template for small scale startups. Features AWS integration, testing, and automated deployments.</p>
-                      <div class="project-footer">
-                        <a href="https://github.com/spavythra/my-thesis" target="_blank" class="project-link">
-                          <i class="fab fa-github"></i> View Code
-                        </a>
-                        <span class="project-type">Master's Thesis</span>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!-- Project Card -->
-              <div class="project-card-wrapper" data-category="web">
+              <!-- Project Card - EasyLearn Suomi (Commented Out - Placeholder)
+              <div class="project-card-wrapper" data-category="public">
                 <div class="project-card-new">
                     <div class="project-image">
                       <img src="img/suomi.png" alt="EasyLearn Suomi">
@@ -523,33 +479,10 @@
                     </div>
                 </div>
               </div>
-              <!-- Project Card -->
-              <div class="project-card-wrapper" data-category="cloud">
-                <div class="project-card-new">
-                    <div class="project-image">
-                      <img src="img/digit.png" alt="Digit Recognition">
-                      <div class="project-overlay">
-                        <span class="project-tag">React</span>
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Kubernetes</span>
-                        <span class="project-tag">Azure</span>
-                      </div>
-                    </div>
-                    <div class="project-content">
-                      <h3 class="project-title">Digit Recognition App</h3>
-                      <p class="project-description">ML-powered digit recognition with React frontend and Python Flask backend. Features Azure cognitive services for translation/speech, containerized with Docker and deployed on Kubernetes.</p>
-                      <div class="project-footer">
-                        <a href="https://github.com/spavythra/kube_digit_identification" target="_blank" class="project-link">
-                          <i class="fab fa-github"></i> View Code
-                        </a>
-                        <span class="project-type">ML & Cloud</span>
-                      </div>
-                    </div>
-                </div>
-              </div>
+              End of Commented EasyLearn Suomi -->
 
               <!-- Project Card -->
-              <div class="project-card-wrapper" data-category="web">
+              <div class="project-card-wrapper" data-category="public">
                 <div class="project-card-new">
                     <div class="project-image">
                       <img src="img/BMS.jpg" alt="Battery Monitoring System">
@@ -566,6 +499,75 @@
                           <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
                         <span class="project-type">IoT Dashboard</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="public">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/realestate.png" alt="FirstNest">
+                      <div class="project-overlay">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">FirstNest - Real Estate Platform</h3>
+                      <p class="project-description">Full-stack real estate web application for first-time home buyers. Features property search and listings, advanced filtering, mortgage calculator, and user authentication. Built with React frontend, Node.js backend, and MongoDB database.</p>
+                      <div class="project-footer">
+                        <a href="https://github.com/spavythra/FirstNest" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i> View Code
+                        </a>
+                        <span class="project-type">Real Estate</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="private">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/nelli.png" alt="Neuro Event Labs">
+                      <div class="project-overlay">
+                        <span class="project-tag">Angular</span>
+                        <span class="project-tag">TypeScript</span>
+                        <span class="project-tag">GitLab CI/CD</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">Video-Based Seizure Detection Platform</h3>
+                      <p class="project-description">Developed front-end solutions for medical video-based seizure detection application at Neuro Event Labs Oy. Implemented with AngularJS and TypeScript, managing DevOps processes through GitLab CI/CD and AWS infrastructure.</p>
+                      <div class="project-footer">
+                        <span class="project-type">Healthcare Tech</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Project Card -->
+              <div class="project-card-wrapper" data-category="private">
+                <div class="project-card-new">
+                    <div class="project-image">
+                      <img src="img/serverless.png" alt="Serverless Infrastructure">
+                      <div class="project-overlay">
+                        <span class="project-tag">AWS</span>
+                        <span class="project-tag">Serverless</span>
+                        <span class="project-tag">Cloud</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3 class="project-title">Serverless Cloud Infrastructure</h3>
+                      <p class="project-description">Secure, cost-effective serverless cloud infrastructure template for small scale startups. Features AWS integration, testing, and automated deployments.</p>
+                      <div class="project-footer">
+                        <a href="https://www.theseus.fi/handle/10024/884354" target="_blank" class="project-link">
+                          <i class="fas fa-file-alt"></i> Publication
+                        </a>
+                        <span class="project-type">Master's Thesis</span>
                       </div>
                     </div>
                 </div>
