@@ -2,7 +2,7 @@
 
 Full-Stack Developer with 8 years of professional experience (6 in QA, 2 in software development). MSc in Cloud-based Software Engineering, TAMK 2025. Based in Finland, open to full-stack and software developer roles.
 
-**Live:** [spavythra.vercel.app](https://spavythra.vercel.app) (or see the pinned Vercel URL on the repo page)
+**Live:** [portfolio-psi-beige-47.vercel.app](https://portfolio-psi-beige-47.vercel.app)
 
 ---
 
@@ -21,9 +21,9 @@ Full-Stack Developer with 8 years of professional experience (6 in QA, 2 in soft
 |---|---|---|
 | [ClearNest](https://github.com/spavythra/ClearNest) | Next.js 15, React 19, TypeScript, Supabase | [clear-nest.vercel.app](https://clear-nest.vercel.app) |
 | [FirstNest](https://github.com/spavythra/FirstNest) | Vanilla JS, Supabase, Vercel | [uusikoti.vercel.app](https://uusikoti.vercel.app) |
-| [Battery Monitor](https://github.com/spavythra/battery_management_system) | React, Vercel serverless | [fleetpulse-battery-dashboard.vercel.app](https://fleetpulse-battery-dashboard.vercel.app) |
+| [Battery Monitor](https://github.com/spavythra/battery_management_system) | React, Vercel serverless | [fleetbatterymonitoring.vercel.app](https://fleetbatterymonitoring.vercel.app) |
 | [Digit Recognition](https://github.com/spavythra/digit_identification_app) | React, Python, Keras, Docker, Azure | [digitidentification.vercel.app](https://digitidentification.vercel.app) |
-| [Sportsclub](https://github.com/spavythra/sportsclub) | React, Vite, react-big-calendar | [sportsclub-ruddy.vercel.app](https://sportsclub-ruddy.vercel.app) |
+| [Sportsclub](https://github.com/spavythra/sportsclub) | React, Vite, react-big-calendar | [sportsclub-tampere.vercel.app](https://sportsclub-tampere.vercel.app) |
 
 ---
 
