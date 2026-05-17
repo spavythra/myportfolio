@@ -22,8 +22,8 @@ Full-Stack Developer with 8 years of professional experience (6 in QA, 2 in soft
 | [ClearNest](https://github.com/spavythra/ClearNest) | Next.js 15, React 19, TypeScript, Supabase | [clear-nest.vercel.app](https://clear-nest.vercel.app) |
 | [FirstNest](https://github.com/spavythra/FirstNest) | Vanilla JS, Supabase, Vercel | [uusikoti.vercel.app](https://uusikoti.vercel.app) |
 | [Battery Monitor](https://github.com/spavythra/battery_management_system) | React, Vercel serverless | [fleetpulse-battery-dashboard.vercel.app](https://fleetpulse-battery-dashboard.vercel.app) |
-| [Digit Recognition](https://github.com/spavythra/digit_identification_app) | React, Python, Keras, Docker, Azure | [digit-recognition-demo.vercel.app](https://digit-recognition-demo.vercel.app) |
-| [Sportsclub](https://github.com/spavythra/sportsclub) | React, Vite, react-big-calendar | [tampere-cc.vercel.app](https://tampere-cc.vercel.app) |
+| [Digit Recognition](https://github.com/spavythra/digit_identification_app) | React, Python, Keras, Docker, Azure | [digitidentification.vercel.app](https://digitidentification.vercel.app) |
+| [Sportsclub](https://github.com/spavythra/sportsclub) | React, Vite, react-big-calendar | [sportsclub-ruddy.vercel.app](https://sportsclub-ruddy.vercel.app) |
 
 ---
 
