@@ -1378,6 +1378,36 @@ h3.my-profession
   }
 }
 
+@media (max-width: 500px) {
+  .contact-row {
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 10px;
+  }
+
+  .contact-box {
+    flex: 0 0 calc(50% - 5px);
+    max-width: calc(50% - 5px);
+    padding: 10px 8px;
+    box-sizing: border-box;
+  }
+
+  .contact-box i {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .contact-box h4 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .contact-box a {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+}
+
 /* footer */
 
 .footer{

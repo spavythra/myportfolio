@@ -11,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: Arial, sans-serif;
             font-size: 10pt;
@@ -22,7 +22,7 @@
             margin: 0 auto;
             padding: 0.4in 0.5in;
         }
-        
+
         h1 {
             font-size: 16pt;
             font-weight: bold;
@@ -30,18 +30,18 @@
             text-align: center;
             text-transform: uppercase;
         }
-        
+
         .contact-info {
             text-align: center;
             margin-bottom: 8pt;
             font-size: 9pt;
             line-height: 1.2;
         }
-        
+
         .contact-info p {
             margin: 1pt 0;
         }
-        
+
         h2 {
             font-size: 11pt;
             font-weight: bold;
@@ -51,89 +51,89 @@
             margin-bottom: 4pt;
             padding-bottom: 1pt;
         }
-        
+
         h3 {
             font-size: 10pt;
             font-weight: bold;
             margin-top: 4pt;
             margin-bottom: 2pt;
         }
-        
+
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             margin-bottom: 2pt;
         }
-        
+
         .job-title {
             font-weight: bold;
             font-size: 10pt;
         }
-        
+
         .job-date {
             font-style: italic;
             font-size: 9pt;
         }
-        
+
         .company {
             font-size: 9pt;
             margin-bottom: 2pt;
         }
-        
+
         .job-description {
             margin-left: 0;
             margin-bottom: 6pt;
             text-align: justify;
             font-size: 9.5pt;
         }
-        
+
         .education-item {
             margin-bottom: 4pt;
         }
-        
+
         .degree {
             font-weight: bold;
             font-size: 10pt;
         }
-        
+
         .institution {
             font-size: 9pt;
         }
-        
+
         .skills-section p {
             margin-bottom: 3pt;
             text-align: justify;
             font-size: 9.5pt;
         }
-        
+
         .skill-category {
             font-weight: bold;
             display: inline;
         }
-        
+
         ul {
             margin-left: 18pt;
             margin-bottom: 4pt;
         }
-        
+
         li {
             margin-bottom: 2pt;
             font-size: 9.5pt;
         }
-        
+
         .summary {
             text-align: justify;
             margin-bottom: 6pt;
             font-size: 9.5pt;
         }
-        
+
         @media print {
             body {
                 padding: 0.4in 0.5in;
             }
         }
-        
+
         @page {
             margin: 0.4in 0.5in;
             size: A4;
@@ -142,20 +142,20 @@
 </head>
 <body>
     <h1>Pavithra Subramaniyam</h1>
-    
+
     <div class="contact-info">
         <p>Tampere, Finland</p>
         <p>Email: pavithra.subramaniyam@example.com | Phone: +358 XX XXX XXXX</p>
         <p>LinkedIn: linkedin.com/in/pavithra-subramaniyam | GitHub: github.com/spavythra</p>
     </div>
-    
+
     <h2>Professional Summary</h2>
     <p class="summary">
         Master's graduate in Cloud-based Software Engineering with 8+ years experience in quality assurance, Full-Stack development, and AWS cloud architecture. Proven track record delivering scalable solutions using React.js, Node.js, TypeScript, and AWS (Lambda, EC2, S3, DynamoDB). Specialized in cloud architecture, CI/CD, Terraform, Docker, and modern JavaScript frameworks.
     </p>
-    
+
     <h2>Professional Experience</h2>
-    
+
     <div class="job-header">
         <div>
             <div class="job-title">Software Developer</div>
@@ -166,7 +166,7 @@
     <div class="job-description">
         Created and deployed production/development environments for web applications on AWS (EC2, DynamoDB, RDS, S3). Implemented secure serverless cloud infrastructure for startups (Master's thesis). Led DevOps and frontend development for e-commerce platform (Ideapark Lempäälä), architecting AWS infrastructure, automated CI/CD pipelines, and React-based frontend features.
     </div>
-    
+
     <div class="job-header">
         <div>
             <div class="job-title">Junior Software Developer</div>
@@ -177,7 +177,7 @@
     <div class="job-description">
         Developed web application for video-based seizure detection. Implemented front-end solutions using AngularJS and TypeScript with DevOps processes managed through GitLab CI/CD and AWS infrastructure.
     </div>
-    
+
     <div class="job-header">
         <div>
             <div class="job-title">Quality Assurance Specialist</div>
@@ -188,9 +188,9 @@
     <div class="job-description">
         Executed 500+ weekly test cases with Excel analysis (pivot tables, VLOOKUPs), reducing cross-team dependencies 21% via Kaizen defect resolution. Mentored 5-person team on QA best practices, achieving 16% faster query handling with zero critical escalations. Led regression testing and root-cause analysis on vendor pipelines using traceability matrices. Trained across Finance, Catalog, VCM, Imaging, and Chargeback topics globally.
     </div>
-    
+
     <h2>Education</h2>
-    
+
     <div class="education-item">
         <div class="job-header">
             <div>
@@ -200,7 +200,7 @@
             <div class="job-date">2022 - 2025</div>
         </div>
     </div>
-    
+
     <div class="education-item">
         <div class="job-header">
             <div>
@@ -210,7 +210,7 @@
             <div class="job-date">2021 - 2022</div>
         </div>
     </div>
-    
+
     <div class="education-item">
         <div class="job-header">
             <div>
@@ -220,32 +220,47 @@
             <div class="job-date">2011 - 2015</div>
         </div>
     </div>
-    
+
     <h2>Technical Skills</h2>
-    
+
     <div class="skills-section">
         <p><span class="skill-category">Cloud & DevOps:</span> AWS (EC2, VPC, S3, Lambda, DynamoDB, RDS), Docker, Terraform, Serverless, GitLab CI/CD</p>
         <p><span class="skill-category">Frontend:</span> React.js, Angular, TypeScript, HTML5, CSS3, JavaScript | <span class="skill-category">Backend:</span> Node.js, Python, PHP, RESTful APIs</p>
         <p><span class="skill-category">Databases:</span> PostgreSQL, MySQL, MongoDB, DynamoDB | <span class="skill-category">Testing:</span> Playwright, JUnit, Jest, Pytest, Test Automation</p>
         <p><span class="skill-category">Data & Analytics:</span> SQL, Excel (Pivot Tables, VLOOKUPs) | <span class="skill-category">Methodologies:</span> Agile, Scrum, DevOps, CI/CD, TDD</p>
     </div>
-    
+
     <h2>Key Projects</h2>
-    
+
     <div style="margin-bottom: 4pt;">
-        <h3>Ideapark Lempäälä - Production E-commerce Platform</h3>
-        <p style="margin-left: 0; margin-bottom: 4pt; font-size: 9.5pt;">Led DevOps and frontend development. Architected AWS infrastructure (EC2, RDS, S3), automated CI/CD pipelines, and developed React-based frontend. Live: lempaala.ideapark.fi</p>
+        <h3>Ideapark E-commerce Platform</h3>
+        <p style="margin-left: 0; margin-bottom: 4pt; font-size: 9.5pt;">Led end-to-end DevOps and frontend development for a live e-commerce platform using AWS infrastructure (EC2, RDS, S3) and React.js. Implemented automated CI/CD pipelines to ensure seamless deployment, high availability, and production stability. Live: lempaala.ideapark.fi</p>
     </div>
-    
+
     <div style="margin-bottom: 4pt;">
-        <h3>Serverless Cloud Infrastructure (Master's Thesis)</h3>
-        <p style="margin-left: 0; margin-bottom: 4pt; font-size: 9.5pt;">Designed secure, cost-effective serverless cloud infrastructure template for startups featuring AWS integration, automated testing, and deployments.</p>
+        <h3>Master's Thesis - Serverless Startup Architecture</h3>
+        <p style="margin-left: 0; margin-bottom: 4pt; font-size: 9.5pt;">Designed and implemented a cost-effective serverless architecture template for startups using AWS Lambda, API Gateway, VPC, Cognito, and DynamoDB. Automated deployment with Serverless Framework and integrated JUnit testing for reliable delivery.</p>
     </div>
-    
+
+    <div style="margin-bottom: 4pt;">
+        <h3>Language Learning Application</h3>
+        <p style="margin-left: 0; margin-bottom: 4pt; font-size: 9.5pt;">Built a full-stack platform with React frontend and Node.js/SQL backend, featuring an admin panel for content management. Implemented secure authentication, input validation, automated CI/CD, data encryption, and containerized architecture for scalable cloud hosting.</p>
+    </div>
+
+    <div style="margin-bottom: 4pt;">
+        <h3>GitHub Visualization Tool</h3>
+        <p style="margin-left: 0; margin-bottom: 4pt; font-size: 9.5pt;">Created a GitHub activity visualization using React and the GitHub API, displaying commit patterns in a color-coded calendar interface. Deployed with automated CI/CD to support real-time data updates and maintain live monitoring.</p>
+    </div>
+
+    <div style="margin-bottom: 4pt;">
+        <h3>Digit Recognition App</h3>
+        <p style="margin-left: 0; margin-bottom: 4pt; font-size: 9.5pt;">Developed an ML digit recognition system using React, Python Flask, and Azure Cognitive Services. Implemented Docker containerization, Kubernetes orchestration, and multilingual translation/speech features for accessible Azure deployment.</p>
+    </div>
+
     <h2>Languages & Additional</h2>
     <p style="margin-bottom: 4pt; font-size: 9.5pt;">
         <span class="skill-category">Languages:</span> English (Professional), Finnish (Elementary) | <span class="skill-category">Portfolio:</span> [Your URL] | Freelance e-commerce development experience
     </p>
-    
+
 </body>
 </html>
