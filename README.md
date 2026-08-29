@@ -1,6 +1,6 @@
 # Pavithra Subramaniyam — Portfolio
 
-AI Automation Trainee at Kimbtron Oy. Full-Stack Developer with 8 years of professional experience (6 in QA, 2 in software development). MSc in Cloud-based Software Engineering, TAMK 2025. Based in Finland.
+AI Automation Trainee at Kimbtron Oy. Full-Stack Developer with 8 years of professional experience (6 in QA, 2 in software development). MSc in Cloud-based Software Engineering, TAMK 2025. Based in Finland, actively looking for AI Full-Stack Developer and Cybersecurity roles.
 
 **Live:** [spavithraportfolio.vercel.app](https://spavithraportfolio.vercel.app)
 
