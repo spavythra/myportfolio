@@ -11,6 +11,7 @@ AI Automation Trainee at Kimbtron Oy. Full-Stack Developer with 8 years of profe
 **Frontend** — React, TypeScript, Angular, Next.js, vanilla JavaScript, HTML5, CSS3, Tailwind  
 **Backend** — Node.js, Python, Flask, PostgreSQL, Supabase  
 **Cloud & DevOps** — AWS (Lambda, EC2, S3, DynamoDB), Docker, Kubernetes, Terraform, CI/CD  
+**AI & Automation** — n8n workflow automation, AI/data tooling, ERP/CRM/HR integrations  
 **Testing** — Playwright, Jest, ts-jest, Pytest, JUnit
 
 ---
